@@ -1,0 +1,135 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    background-color: #9fbeda;
+    padding: 2rem;
+  }
+  
+  
+  .form-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #202124;
+  }
+  
+  .input {
+    padding: 0.75rem;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #202124;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+  }
+  
+  .input::placeholder {
+    color: #5f6368;
+  }
+  
+  .forgot-password {
+    text-align: right;
+  }
+  
+  .forgot-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+    right: 150px;
+  }
+  
+  .forgot-link:hover {
+    color: #1557b0;
+  }
+  
+  .button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #1557b0;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  .signup-text {
+    text-align: center;
+    color: #5f6368;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .signup-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .signup-link:hover {
+    color: #1557b0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-page {
+      padding: 1rem;
+    }
+  
+    .form-wrapper {
+      padding: 1.5rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  }

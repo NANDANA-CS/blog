@@ -1,0 +1,157 @@
+.write-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 2rem;
+  }
+  
+  .form-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #202124;
+  }
+  
+  .input {
+    padding: 0.75rem;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #202124;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+  }
+  
+  .textarea {
+    padding: 0.75rem;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #202124;
+    outline: none;
+    min-height: 150px;
+    resize: vertical;
+    transition: border-color 0.2s ease;
+  }
+  
+  .textarea:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+  }
+  
+  .input::placeholder,
+  .textarea::placeholder {
+    color: #5f6368;
+  }
+  
+  .image-upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #f1f3f4;
+    border: 2px dashed #dadce0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #5f6368;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .image-placeholder:hover {
+    background-color: #e8eaed;
+  }
+  
+  .image-preview {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #1a73e8;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #1557b0;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .write-page {
+      padding: 1rem;
+    }
+  
+    .form-wrapper {
+      padding: 1.5rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .image-placeholder,
+    .image-preview {
+      height: 150px;
+    }
+  }
